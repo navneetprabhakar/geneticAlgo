@@ -5,7 +5,7 @@ Lets say there is a travelling salesman who has to visit different cities daily.
 # Introduction:
 Genetic Algorithm is an algorithm that is inspired from the process of "Natural Selection". The theory of Natural Selection or Darwin's theory of evolution refers to evolution of species and survival of the fittest.
 
-The approach
+#Approach
 Let’s start with a few definitions, rephrased in the context of the problem:
 
 1. Gene: a city (represented as (x, y) coordinates)
@@ -26,5 +26,61 @@ Our Algorithm will proceed in the following steps:
 4. Breed
 5. Mutate
 6. Repeat
+
+#API Description: 
+METHOD: POST
+URL: http://localhost:8080/GA/salesManRoute
+Body: 
+// This is a Sample Request with 8 cities with symmetric cartesian co-ordinates.
+{
+	"data":{
+		"popSize":100,
+		"genSize":100,
+		"mutationRate":0.05,
+		"city":[
+		{
+			"name":"A",
+			"x":10,
+			"y":5
+		},
+		{
+			"name":"B",
+			"x":10,
+			"y":-5
+		},
+		{
+			"name":"C",
+			"x":5,
+			"y":-10
+		},
+		{
+			"name":"D",
+			"x":-5,
+			"y":-10
+		},
+		{
+			"name":"E",
+			"x":-10,
+			"y":-5
+		},
+		{
+			"name":"F",
+			"x":-10,
+			"y":5
+		},
+		{
+			"name":"G",
+			"x":-5,
+			"y":10
+		},
+		{
+			"name":"H",
+			"x":5,
+			"y":10
+		}
+		]
+	}
+}
+
 
 Wiki Link: https://en.wikipedia.org/wiki/Genetic_algorithm
