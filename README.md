@@ -28,10 +28,10 @@ Our Algorithm will proceed in the following steps:
 6. Repeat
 
 # API Description: 
-METHOD: POST
-URL: http://localhost:8080/GA/salesManRoute
-Body: 
-// This is a Sample Request with 8 cities with symmetric cartesian co-ordinates.
+- METHOD: POST
+- URL: http://localhost:8080/GA/salesManRoute
+- Body: 
+%% This is a Sample Request with 8 cities with symmetric cartesian co-ordinates.
 {
 	"data":{
 		"popSize":100,
