@@ -32,6 +32,8 @@ Our Algorithm will proceed in the following steps:
 - URL: http://localhost:8080/GA/salesManRoute
 - Body: 
 %% This is a Sample Request with 8 cities with symmetric cartesian co-ordinates.
+
+```json
 {
 	"data":{
 		"popSize":100,
@@ -81,6 +83,6 @@ Our Algorithm will proceed in the following steps:
 		]
 	}
 }
-
+```
 
 Wiki Link: https://en.wikipedia.org/wiki/Genetic_algorithm
