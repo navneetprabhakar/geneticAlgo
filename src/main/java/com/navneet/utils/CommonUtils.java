@@ -183,53 +183,5 @@ public class CommonUtils {
 		return route;
 	}
 	
-	/*public static void main(String[] args) {
-		int popSize=100;
-		int genSize=200;
-		double mutationRate=0.15;
-		City A = new City("A", 10.0, 5.0);
-		City B = new City("B", 10.0, -5.0);
-		City C = new City("C", 5.0, -10.0);
-		City D = new City("D", -5.0, -10.0);
-		City E = new City("E", -10.0, -5.0);
-		City F = new City("F", -10.0, 5.0);
-		City G = new City("G", -5.0, 10.0);
-		City H = new City("H", 5.0, 10.0);
-		City I = new City("I", 0.0, 0.0);
-		List<City> cityList = new ArrayList<>();
-		cityList.add(A);
-		cityList.add(B);
-		cityList.add(C);
-		cityList.add(D);
-		cityList.add(E);
-		cityList.add(F);
-		cityList.add(G);
-		cityList.add(H);
-		cityList.add(I);
-		Long initTime=Calendar.getInstance().getTimeInMillis();
-		List<List<City>> population = generatePopulation(cityList, popSize);
-		Long finishTime=Calendar.getInstance().getTimeInMillis();
-		System.out.println("Population size :"+popSize+" generated in:"+(finishTime-initTime)+" ms");
-		List<Fitness> ranked=rankRoutes(population);
-		ranked=Fitness.getNormalisedValue(ranked);
-		Fitness bestRoute=ranked.get(0);
-		for(int j=0;j<genSize;j++) {
-			System.out.println("Initiating generation:"+(j+1));
-			List<Fitness> selection=selection(ranked, popSize/3);
-			List<Fitness> generation=new ArrayList<>();
-			for(int i=0;i<selection.size()-1;i=i+2) {
-				generation.add(crossOver(selection.get(i), selection.get(i+1)));
-				generation.add(crossOver(selection.get(i+1), selection.get(i)));
-			}
-			generation=mutate(generation, mutationRate);
-			List<Fitness> genRanked=rankGenRoutes(generation);
-			if(bestRoute.getDistance()>genRanked.get(0).getDistance()) {
-				bestRoute=genRanked.get(0);
-			}
-			System.out.println("Global Best route:");
-			printRoute(bestRoute);
-		}
-		
-	}*/
 	
 }
