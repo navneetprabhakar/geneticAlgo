@@ -30,8 +30,7 @@ Our Algorithm will proceed in the following steps:
 # API Description: 
 - METHOD: POST
 - URL: http://localhost:8080/GA/salesManRoute
-- Body: 
-%% This is a Sample Request with 8 cities with symmetric cartesian co-ordinates.
+- Body: This is a Sample Request with 8 cities with symmetric cartesian co-ordinates.
 
 ```json
 {
